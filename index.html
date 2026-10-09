@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Name — Full-Stack Developer &amp; Creative Technologist</title>
+<meta name="description" content="Portfolio of a full-stack developer and creative technologist building digital experiences where technology, design, and real-world problems meet.">
+<meta name="theme-color" content="#08090D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%B7%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-ur" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></symbol>
+  <symbol id="i-r" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="c-dot" id="cDot" aria-hidden="true"></div>
+<div class="c-ring" id="cRing" aria-hidden="true"><span id="cLabel"></span></div>
+
+<header class="nav" id="nav">
+  <div class="container nav-in">
+    <a href="#home" class="logo" aria-label="Home"><span class="logo-mark" data-initials>YN</span><span class="logo-name" data-name>Your Name</span></a>
+    <nav class="nav-links-wrap" aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <span class="nav-ind" id="navInd" aria-hidden="true"></span>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <ol>
+      <li><a class="m-link" href="#home" style="--i:0"><span>01</span>Home</a></li>
+      <li><a class="m-link" href="#work" style="--i:1"><span>02</span>Work</a></li>
+      <li><a class="m-link" href="#about" style="--i:2"><span>03</span>About</a></li>
+      <li><a class="m-link" href="#skills" style="--i:3"><span>04</span>Skills</a></li>
+      <li><a class="m-link" href="#journey" style="--i:4"><span>05</span>Journey</a></li>
+      <li><a class="m-link" href="#contact" style="--i:5"><span>06</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu-foot socials" data-socials></div>
+</div>
+
+<main id="main" tabindex="-1">
+
+  <!-- 1. HOME -->
+  <section id="home" class="hero" aria-labelledby="heroName">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="label hero-in" style="--d:0"><span class="dot"></span>Hello, I’m</p>
+        <h1 class="hero-name" id="heroName" data-name>Your Name</h1>
+        <p class="hero-role hero-in" style="--d:5">Full-Stack Developer<br>&amp; Creative Technologist</p>
+        <p class="hero-lede hero-in" style="--d:6">I build digital experiences where technology, design, and real-world problems meet — from thoughtful interfaces to dependable back-ends.</p>
+        <div class="hero-cta hero-in" style="--d:7">
+          <a class="btn btn-primary magnetic" href="#work" data-cursor="VIEW">View My Work <svg class="ico ico-r" aria-hidden="true"><use href="#i-r"/></svg></a>
+          <a class="btn btn-ghost magnetic" href="#contact" data-cursor="TALK">Let’s Connect</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <canvas class="gl" id="heroCanvas"></canvas>
+        <div class="orb-fallback"></div>
+      </div>
+    </div>
+    <a class="scroll-cue" id="cue" href="#work" aria-label="Scroll to selected work"><span class="mouse" aria-hidden="true"><i></i></span><span>Scroll</span></a>
+  </section>
+
+  <!-- 2. WORK -->
+  <section id="work" class="section" aria-labelledby="work-title">
+    <div class="container">
+      <header class="sec-head">
+        <p class="label reveal"><span class="dot"></span>Work</p>
+        <h2 class="h2 reveal" id="work-title" style="--d:1">Selected work</h2>
+        <p class="lede reveal" style="--d:2">A few things I’ve designed and built — each one started with a real problem.</p>
+      </header>
+      <div class="projects" id="projects"></div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="container about-grid">
+      <div class="portrait reveal" id="portrait">
+        <div class="pt-offset" aria-hidden="true"></div>
+        <div class="pt-frame" id="ptFrame">
+          <div class="pt-ring" aria-hidden="true"></div>
+          <div class="pt-square" aria-hidden="true"></div>
+          <div class="pt-mono" data-initials aria-hidden="true">YN</div>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="label reveal"><span class="dot"></span>About me</p>
+        <h2 class="h2 reveal" id="about-title" style="--d:1">Engineer’s mind, designer’s eye</h2>
+        <p class="quote reveal" style="--d:2">“I build digital experiences where technology, design, and real-world problems meet.”</p>
+        <p class="reveal" style="--d:3">I’m a developer and creative technologist who enjoys turning complex problems into clear, well-crafted products. I work across the stack — from interface details to APIs and data — with an eye for how things look, feel, and perform.</p>
+        <p class="reveal" style="--d:4">My approach is simple: understand the problem first, design with intent, and build things that are fast, accessible, and easy to maintain.</p>
+        <ul class="stats reveal" id="stats" style="--d:5"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SKILLS -->
+  <section id="skills" class="section" aria-labelledby="skills-title">
+    <div class="container">
+      <header class="sec-head">
+        <p class="label reveal"><span class="dot"></span>Skills</p>
+        <h2 class="h2 reveal" id="skills-title" style="--d:1">The toolkit</h2>
+        <p class="lede reveal" style="--d:2">Pick a category, then hover, focus, or tap a skill — or explore the orbit and drag to rotate it.</p>
+      </header>
+      <div class="skills-grid">
+        <div class="skills-stage glass reveal" data-cursor="DRAG">
+          <canvas class="gl" id="skillsCanvas" aria-hidden="true"></canvas>
+          <div class="orb-fallback"></div>
+          <p class="stage-hint" aria-hidden="true">Drag to rotate</p>
+        </div>
+        <div class="skills-panel reveal" style="--d:2">
+          <div class="tabs" role="tablist" aria-label="Skill categories" id="tabs"></div>
+          <div class="skill-list" role="tabpanel" id="skillList" aria-label="Skills"></div>
+          <div class="skill-detail glass" id="skillDetail" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. JOURNEY -->
+  <section id="journey" class="section" aria-labelledby="journey-title">
+    <div class="container">
+      <header class="sec-head">
+        <p class="label reveal"><span class="dot"></span>Journey</p>
+        <h2 class="h2 reveal" id="journey-title" style="--d:1">My journey</h2>
+        <p class="lede reveal" style="--d:2">Milestones along the way — education, projects, hackathons, certifications, and more.</p>
+      </header>
+      <div class="timeline" id="timeline">
+        <div class="tl-line" aria-hidden="true"><div class="tl-fill" id="tlFill"></div></div>
+        <ol class="tl-list" id="tlList"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CONTACT -->
+  <section id="contact" class="section contact" aria-labelledby="contact-title">
+    <div class="contact-orb" aria-hidden="true">
+      <canvas class="gl" id="contactCanvas"></canvas>
+      <div class="orb-fallback"></div>
+    </div>
+    <div class="container">
+      <header class="contact-head">
+        <p class="label reveal"><span class="dot"></span>Contact</p>
+        <h2 class="h2 reveal" id="contact-title" style="--d:1">Let’s build something great</h2>
+        <p class="lede reveal" style="--d:2">Have an idea, project, or opportunity? Let’s talk.</p>
+      </header>
+      <div class="contact-grid">
+        <div class="contact-links reveal" id="contactLinks" style="--d:2"></div>
+        <div class="reveal" style="--d:3">
+          <form class="form glass" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="f-name">Name</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required aria-describedby="err-name">
+                <p class="err" id="err-name" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="err-email">
+                <p class="err" id="err-email" aria-live="polite"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-subject">Subject</label>
+              <input id="f-subject" name="subject" type="text" placeholder="What’s this about?" required aria-describedby="err-subject">
+              <p class="err" id="err-subject" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="5" placeholder="Tell me a little about your idea…" required aria-describedby="err-message"></textarea>
+              <p class="err" id="err-message" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary btn-lg magnetic" type="submit" id="sendBtn"><span id="sendLabel">Send message</span> <svg class="ico ico-r" aria-hidden="true"><use href="#i-r"/></svg></button>
+          </form>
+          <div class="success glass" id="success" tabindex="-1" hidden>
+            <div class="check"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg></div>
+            <h3>Message ready to send</h3>
+            <p>Thanks — your message passed validation. Connect the form to your email service or backend to deliver it.</p>
+            <button class="btn btn-ghost" type="button" id="againBtn">Write another message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <strong data-name>Your Name</strong>
+        <p id="tagline">Designed &amp; built with curiosity, code, and creativity.</p>
+      </div>
+      <div class="socials" data-socials></div>
+      <a class="btn btn-ghost" href="#home" aria-label="Back to top" data-cursor="TOP"><svg class="ico" aria-hidden="true"><use href="#i-up"/></svg> Back to top</a>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> <span data-name>Your Name</span>. All rights reserved.</span>
+      <span>Full-Stack Developer &amp; Creative Technologist</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
